@@ -1,0 +1,127 @@
+/* main style according to page size */
+@media (min-width: 600px) {
+    #welcome_message::before {
+        content: "Welcome to my knitting page!";
+    }
+}
+@media (max-width: 599px) {
+    #welcome_message::before {
+        content: "Welcome!";
+    }
+}
+/* hide while printing (for baby photos) */
+@media print {
+    .screen-only {
+        display: none;
+    }
+}
+/* navigation bar style */
+.container-fluid, .navbar-light .navbar-brand, .nav-item .dropdown, .dropdown-item {
+    background-color:rgb(207, 191, 191);
+    color: rgb(100, 59, 57);
+}
+.navbar-light .navbar-brand:hover, .nav-item .dropdown-item:hover, .nav-item:hover,
+.navbar-light .navbar-nav .nav-link:hover, .btn:hover {
+    color: rgb(88, 133, 218);
+    background-color: rgba(226, 217, 209, 0.8);
+}
+.dropdown-menu {
+    background-color:rgb(207, 191, 191);
+}
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+.navbar-light .navbar-nav .nav-link, .btn {
+    color: rgb(100, 59, 57);
+}
+/* basic text style */
+.main-text {
+    margin: 5%;
+    text-align: center;
+}
+.text-block {
+    background-color: rgba(226, 217, 209, 0.7);
+    margin: 50px;
+    padding: 50px;
+    text-align: left;
+}
+body {
+    background-image: url('img/bodybackround.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(100, 59, 57);
+}
+/* main page text style */
+.welcome_text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* freelinks.html page style */
+.free-pattern-links {
+    color:dodgerblue;
+    text-decoration: underline;   
+}
+/* patterns.html style */
+.container {
+    display:flex;
+    flex-wrap: wrap;
+}
+.container>div {
+    background-color: rgb(207, 191, 191);
+    margin: 20px;
+    text-align: center;
+    padding: 15px;
+}
+.container>div:target {
+    background-color:rgb(100, 170, 212);
+}
+.pattern_img {
+    height: 180px;
+    width: 300px;
+}
+/* knittinginstructions.html style */
+.tables {
+    border: 3px solid rgb(100, 59, 57);
+    margin-top: 20px;
+    padding: 30px;
+}
+.knitsymbols {
+    width: 90%;
+}
+.to_the_top {
+    margin-right: 40px;
+    text-align: right;
+}
+/* style of the links */
+a {
+    color: rgb(100, 59, 57);
+    text-decoration: none;
+}
+a:hover {
+    color: dodgerblue;
+}
+/* myknits.html style */
+.grid {
+    display:grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: auto;
+}
+.grid-item {
+    border: 3px solid rgb(100, 59, 57);
+    padding: 20px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.photos {
+    height: 300px;
+    margin: 15px;
+    margin-right: 0px;
+}
+.fullscreen {
+    max-width: 100%;
+    margin: 15px;
+    margin-right: 0px;
+}
